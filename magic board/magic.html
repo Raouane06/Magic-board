@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Magic board by Raouane</title>
+    <link rel="stylesheet" href="magic.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="magic.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <section class="tools-board">
+        <div class="row">
+          <h1 class="title">TOOLS</h1>
+          <label class="title">Shapes</label>
+          <ul class="options">
+            <li class="option tool" id="rectangle">
+              <img src="pic\icons8-rectangle-48.png" alt="Rectangle">
+              <span>Rectangle</span>
+            </li>
+            <li class="option tool" id="circle">
+              <img src="pic\icons8-circle-50.png" alt="Circle">
+              <span>Circle</span>
+            </li>
+            <li class="option tool" id="triangle">
+              <img src="pic\icons8-triangle-50.png" alt="Triangle">
+              <span>Triangle</span>
+            </li>
+            <li class="option tool" id="line">
+              <img src="pic\icons8-line-50.png" alt="Line">
+              <span>Line</span>
+            </li>
+            <li class="option tool" id="random-draw">
+              <img src="pic\icons8-pentagon-50.png" alt="Random Draw">
+              <span>Random Draw</span>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill-color">
+              <label for="fill-color">Fill color</label>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <label class="title">Options</label>
+          <ul class="options">
+            <li class="option active tool" id="brush">
+              <img src="pic\icons8-paint-brush-64.png" alt="Brush">
+              <span>Brush</span>
+            </li>
+            <li class="option tool" id="eraser">
+              <img src="pic\icons8-eraser-24.png" alt="Eraser">
+              <span>Eraser</span>
+            </li>
+            <li class="option">
+              <input type="range" id="size-slider" min="1" max="30" value="5">
+            </li>
+          </ul>
+        </div>
+        <div class="row colors">
+          <label class="title">Colors</label>
+          <ul class="options">
+            <li class="option"></li>
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option">
+              <input type="color" id="color-picker" value="#4A98F7">
+            </li>
+          </ul>
+        </div>
+        <div class="row buttons">
+          <button class="clear-canvas">Clear Workspace</button>
+          <button class="save-img">Save As Image</button>
+        </div>
+      </section>
+      <section class="drawing-board">
+        <canvas></canvas>
+      </section>
+    </div>
+  </body>
+</html>
